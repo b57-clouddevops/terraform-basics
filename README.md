@@ -56,6 +56,8 @@ Note :
 
     5) terraform supports Dictionary varaible , List Variables , Map Variables 
 
+
+
 ```
 output "sample_op" {
     value = var.sample
@@ -68,3 +70,9 @@ output "sample_op" {
 Invalid
 
 ```
+
+### If you've multiples .tf files in a directory and when you run the Terraform init, plan, apply commands how it works ?
+
+    1) terraform first loads all the files in an Alplabetical Order 
+    2) It compiles all of them files and then it understands the logic and the order of creation.
+    3) Now apply it going to create the infra in an approach that's needed.
