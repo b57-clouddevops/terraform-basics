@@ -48,3 +48,9 @@ variable "city" {}
 output "fav_city_name" {
     value = var.city
 }
+
+# printing state 
+variable "state" {}
+output "fav_state_name" {
+    value = var.state
+}
