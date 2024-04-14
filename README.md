@@ -42,3 +42,20 @@ variable is a reserved key workd to declare/define variable and sample is the na
 
 
 ```
+
+
+Note :
+    1) You cannot have 2 outputs with the same name
+
+```
+output "sample_op" {
+    value = var.sample
+}
+
+output "sample_op" {
+    value = var.ola
+}
+
+Invalid
+
+```
