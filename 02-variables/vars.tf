@@ -8,4 +8,6 @@ output "sample_op" {
     value = var.sample
 }
 
-output
+output "sampls_op_with_var" {
+    value = Value of sample is var.sample 
+}
