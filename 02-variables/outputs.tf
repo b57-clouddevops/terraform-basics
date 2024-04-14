@@ -46,5 +46,5 @@ output "learning_map_op" {
 # printing city 
 variable "city" {}
 output "fav_city_name" {
-    value = var.fav_city_name
+    value = var.city
 }
