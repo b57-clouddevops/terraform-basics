@@ -56,6 +56,7 @@ Note :
 
     5) terraform supports Dictionary varaible , List Variables , Map Variables 
 
+    6) You can also supply the values of variables in a file called as "terraform.tfvars" and what terraform by default picks this file.
 
 
 ```
@@ -76,3 +77,8 @@ Invalid
     1) terraform first loads all the files in an Alplabetical Order 
     2) It compiles all of them files and then it understands the logic and the order of creation.
     3) Now apply it going to create the infra in an approach that's needed.
+
+
+It's always recommended to write the infra without hardcoding values that means parameterizing it and supplying the values based on the environment you're provisioning.
+
+### Values of the variables can be sourced from different files and it goes by priority . . . . 

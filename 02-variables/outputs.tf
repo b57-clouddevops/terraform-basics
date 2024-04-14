@@ -41,3 +41,10 @@ variable "learning_map" {
 output "learning_map_op" {
     value = "Welcome To ${var.learning_map["batch"]} th batch and learning mode is ${var.learning_map["mode"]} and it covers ${var.learning_map["learning"]}"
 }
+
+
+# printing city 
+variable "city" {}
+output "fav_city_name" {
+    value = var.fav_city_name
+}
