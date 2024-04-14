@@ -28,3 +28,16 @@ variable "learning_info" {
 output "learning_info_op" {
     value = "Welcome To ${var.learning_info[0]} with ${var.learning_info[1]} Learning and this is our ${var.learning_info[2]}th learning batch"
 }
+
+# Declaring a map variable 
+variable "learning_map" {
+    default = {
+        batch = 56
+        mode = online 
+        learning = "DevOpsWithAWS"
+    }
+}
+
+output "learning_map_op" {
+    value = "Welcome To ${var.learning_map["batch"]} th batch and learning mode is ${var.learning_map["mode"]} and it covers ${var.learning_map["learning"]}"
+}
