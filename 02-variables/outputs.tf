@@ -14,3 +14,17 @@ output "sampls_op_with_var" {
 output "batch_number" {
     value = var.batch
 }
+
+# Declaring a list variable 
+variable "learning_info" {
+    default = [
+        "DevOps",
+        "AWS",
+        57
+    ]
+}
+
+# printing a list variable
+output "learning_info_op" {
+    value = "Welcome To ${var.learning_info[0]} with ${var.learning_info[1]} Learning and this is our ${var.learning_info[2]}th learning batch"
+}
