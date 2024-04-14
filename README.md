@@ -46,6 +46,15 @@ variable is a reserved key workd to declare/define variable and sample is the na
 
 Note :
     1) You cannot have 2 outputs with the same name
+    2) Terraform only support double quotes. Single quotes are not allowed.
+    3) Terraform supports Datatypes and by default everything is a string 
+        supported data-types :
+            1) Strings
+            2) Numbers 
+            3) Booleans
+    4) Strings are always supposed to be enclosed in double-quotes whilst for numbers & booleans, there is no need of it.
+
+    5) terraform supports Dictionary varaible , List Variables , Map Variables 
 
 ```
 output "sample_op" {
