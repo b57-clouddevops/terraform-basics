@@ -33,7 +33,7 @@ output "learning_info_op" {
 variable "learning_map" {
     default = {
         batch = 56
-        mode = online 
+        mode = "online" 
         learning = "DevOpsWithAWS"
     }
 }
