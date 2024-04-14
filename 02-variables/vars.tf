@@ -9,5 +9,8 @@ output "sample_op" {
 }
 
 output "sampls_op_with_var" {
-    value = Value of sample is var.sample 
+    value = "Value of sample is ${var.sample}"
 }
+
+# When to enclose a variable in Quotes and when to use $ notation for a variable ???
+# Whenever your variable is enclosed in a set of strings or in between a sentence, then we to enslose them in strings and with bash notation.
