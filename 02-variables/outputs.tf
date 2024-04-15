@@ -10,7 +10,6 @@ output "sampls_op_with_var" {
 # When to enclose a variable in Quotes and when to use $ notation for a variable ???
 # Whenever your variable is enclosed in a set of strings or in between a sentence, then we to enslose them in strings and with bash notation.
 
-
 output "batch_number" {
     value = var.batch
 }
