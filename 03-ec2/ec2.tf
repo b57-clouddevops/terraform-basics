@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
 
 
   tags = {
-    Name = "tf-instance"
+    Name = "tf-instance-dev"
   }
 }
 

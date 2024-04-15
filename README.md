@@ -126,3 +126,11 @@ You know aws provider 10.20.40 needs to have a minimum of 1.0.5 terraform versio
     1) Arguments are the properties that are needed to create infra ( Using these properties we are going to tell the type of infra to be created )
 
     2) Attributes : These are the properties of the resources that can only the be accessed only once the infrastructure is created.
+
+
+### What will happen if you run "terraform plan" & "terraform apply" multiples times ?
+
+Is it going to create the resources one more time ? No ?
+
+
+### How terraform works ?
