@@ -152,3 +152,5 @@ Is it going to create the resources one more time ? No ?
 
     1) No, "terraform apply" can create / destroy / update the resources based on the type of changes that you're making.
     2) So, it's quite important that you need to review the plan 2-3 times along with a peer-review.
+
+Based on the type of changes that you're making 'terraform apply' can create / destroy / update / re-create the infrastructure.
