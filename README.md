@@ -183,3 +183,18 @@ Based on the type of changes that you're making 'terraform apply' can create / d
 ```
  S3 stands for Simple Secure Storage : This is a object level storage as a solution offered by amazon and which is widely used by companies to store and organize the data and billing is based on the storage utilization
 ```
+
+### We have placed our state on the top of a remote backend. What will happen if 2 members tries to run the plan or apply at the same time ?
+
+    1) Both of the actions will be executed paralley and it's a quite a back approach.
+
+
+### How can we place a mechanism, where if some runs the tf and in the meantime if someone in the teams run the TF Apply, the latest apply command should report an ERROR Saying that xyz user is running and you cannot run.
+
+```
+We have that feature available if you're using TERRAFORM ENTERPRISE.
+
+But if you're on AWS, you can attach your DYNAMO DB to S3 and can achieve the premium feature for free officially ?
+
+How to do that is something we see in tomorrow's session.
+```
