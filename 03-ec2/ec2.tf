@@ -8,3 +8,7 @@ resource "aws_instance" "web" {
     Name = "tf-instance"
   }
 }
+
+output "private_ip_address" {
+    value = aws_instance.web.private_ip
+}
