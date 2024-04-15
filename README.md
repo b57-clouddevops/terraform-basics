@@ -134,3 +134,21 @@ Is it going to create the resources one more time ? No ?
 
 
 ### How terraform works ?
+
+1) All the resources created by terraform will be registered in a file called as STATE FILE in terraform.
+2) This statefile contains all the information about the resources created by it.
+3) Whenever you do a "TERRAFORM PLAN" , terraform compares your CODE with the STATEFILE and if there are any deviations in relation to the previos infra, terraform marks that as a change and notice that.
+
+
+### What will happen, I have created the infra using terraform and some changed some properties manually on that console and when you run plan next time, what will happen ? 
+
+    1) If you're terraform, 100% of your actions should only be by terraform.
+    2) Manual actions are not entertained.
+    3) In this case, if some changes any property manually and if you run the terraform, whatever you've on the code will be the source of truth.
+    4) Your manual changes will be erased and the original or the values that are mentioned in the code will only be considered.
+
+
+### Will "terrafrom apply" only creates the infra ?
+
+    1) No, "terraform apply" can create / destroy / update the resources based on the type of changes that you're making.
+    2) So, it's quite important that you need to review the plan 2-3 times along with a peer-review.
