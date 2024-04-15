@@ -14,5 +14,5 @@ resource "aws_instance" "app" {
 
 # Printing the output
 output "private_ip_address" {
-    value = aws_instance.web.private_ip
+    value = aws_instance.app.private_ip
 }
