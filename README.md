@@ -130,7 +130,7 @@ You know aws provider 10.20.40 needs to have a minimum of 1.0.5 terraform versio
 
 ### What will happen if you run "terraform plan" & "terraform apply" multiples times ?
 
-Is it going to create the resources one more time ? No ?
+Is it going to create the resources one more time ? No , because it always refers the state file.
 
 
 ### How terraform works ?
@@ -154,3 +154,32 @@ Is it going to create the resources one more time ? No ?
     2) So, it's quite important that you need to review the plan 2-3 times along with a peer-review.
 
 Based on the type of changes that you're making 'terraform apply' can create / destroy / update / re-create the infrastructure.
+
+
+### What is a backend in terraform ?
+
+```
+    Backend is nothing but the location where the terraform state file is stored.
+    But default, terraform state will be hosted on local machine or on the local-backend.
+```
+
+### When you're working in a Team, it's always recommended to keep the STATE centrally, so that everyone in the team can refer and update it.
+
+### Ensure you've a recommended strategy and here are the best practices of placing Terraform remote state :
+
+    1) Ensure your statefile is not a remote-backend 
+    2) Make sure that the remote backend is encrypted ( In you're on AWS, use KMS Keys )
+
+
+    manoj-password   ----- encryptTion ---- xnsheuso ----->  wieovasedrnqvoqijeaasdfqwedfasd
+
+    3) Using Key Management System, generate a key and encrypt the bucket. So that the information is secure and will be security qualified
+
+    4) If you're using S3, ensure versioning is enabled.
+
+
+#### By the way, what is S3 ?
+
+```
+ S3 stands for Simple Secure Storage : This is a object level storage as a solution offered by amazon and which is widely used by companies to store and organize the data and billing is based on the storage utilization
+```
