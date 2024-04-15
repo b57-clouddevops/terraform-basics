@@ -6,7 +6,7 @@ resource "aws_instance" "web" {
 
 
   tags = {
-    Name = "tf-instance-backend"
+    Name = "tf-instance-remote-backend"
   }
 }
 
