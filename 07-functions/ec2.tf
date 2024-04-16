@@ -11,7 +11,7 @@ resource "aws_instance" "checker" {
   count                     = 3
 
   tags = {
-    Name = "checker-instance"
+    Name = "checker-instance-${count.index}"
   }
 }
 
@@ -20,3 +20,8 @@ resource "aws_instance" "checker" {
 #     value = aws_instance.checker.private_ip
 # }
 
+
+# count is a function and if you say 3 : it's instances will be created : It's alomost like a for loop :
+# count = 3 :  0, 1, 2  ( Iterations or Index Value )
+
+# count works in conjunction with count.index
