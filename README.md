@@ -324,3 +324,10 @@ This is not always a safe practice, but when you're dealing with resources that 
 
 ### Steps To Pass The Date Between Modules ?
 
+`Ref : https://github.com/b57-clouddevops/terraform-basics/tree/main/08-localModules`
+    1) If you've 2 modules named ec2/ and sg/
+    2) And to pass the sdID in form sg module to ec2/, then declare the sdid as output in the sg/ 
+    3) Now supply this as abject in the root folder ( sg = module.sg.sdID)
+    4) Now on the ec2/ declare an empty variable as variable "sg" {}
+    5) Now this can be referrenced 
+ 
