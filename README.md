@@ -220,3 +220,18 @@ Advantage of using Terraform Remote backend S3 with dynamodb :
 
     Terraform generates key names that include the values of the bucket and key variables.
 ```
+
+
+This is how we can configure our backend on s3 to be managed by DynamodDB :
+```
+terraform {
+  backend "s3" {
+    bucket              = "b57-tf-state-bucket"
+    key                 = "dev/dynamodb/terraform.tfstate"
+    region              = "us-east-1"
+    dynamodb_table      = "terraform-locking"
+  }
+}
+```
+
+Ensure DynamodDB is created with partition key as "LockID"
