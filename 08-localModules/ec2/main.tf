@@ -13,7 +13,7 @@ resource "aws_instance" "checker" {
 
 
   tags = {
-    Name = "checker-instance-${count.index+1}"
+    Name = "checker-instance"
   }
 }
 
