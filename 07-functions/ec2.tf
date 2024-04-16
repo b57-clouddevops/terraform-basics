@@ -16,7 +16,7 @@ resource "aws_instance" "checker" {
 }
 
 # Printing the output
-output "private_ip" {
-    value = aws_instance.checker.private_ip
-}
+# output "private_ip" {
+#     value = aws_instance.checker.private_ip
+# }
 
