@@ -267,3 +267,12 @@ From now if more than one parallel run happens, you'd see the below exception th
     Inboubd Traffic is referred as Ingress 
     Outbound Traffic is referred as Egress
 ```
+
+### In terraform, how can we fetch the details of the resources that are already available on Cloud ( No need to be created by terraform ) ?
+
+```
+    Datasource in terraform can helps in fetching the properties of the available resources.
+    Based on the type of resource, terraform provides the datasoures.
+
+    Google ---> AWS AMI Datasource Terraform
+```
