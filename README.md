@@ -259,3 +259,11 @@ From now if more than one parallel run happens, you'd see the below exception th
     │ again. For most commands, you can disable locking with the "-lock=false"
     │ flag, but this is not recommended.
 ```
+
+
+### Ingress vs Egress :
+
+```
+    Inboubd Traffic is referred as Ingress 
+    Outbound Traffic is referred as Egress
+```
