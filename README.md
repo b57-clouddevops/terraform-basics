@@ -206,3 +206,6 @@ How to do that is something we see in tomorrow's session.
     3) How it's supposed to work is, if one person runs and at the same time if someother person tries to run, he should msg saying that STATEFILE is locked by person - x and you need to wait till the completion of that. 
     4) Point-3 is a default Terraform Enterprise Feature ( TFE : Terraform ) 
     5) Even in openSource you can achieve the same by integrating S3 with DynamoDB ( This is exclusive to AWS )
+    6) Typically if you're not on AWS Cloud and if you're using Jenkins to run terraform jobs, you can still handle it :
+
+        a) On the Jenkins job, there is an option called as "disableConcurrentBuilds()" , if a job-x is running and if someone tries to run the same job-x at the same time, till the completion of the previous run, it will be in the queue. 
