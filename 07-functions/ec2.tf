@@ -11,7 +11,7 @@ resource "aws_instance" "checker" {
   count                     = 3
 
   tags = {
-    Name = "tf-instance"
+    Name = "checker-instance"
   }
 }
 
