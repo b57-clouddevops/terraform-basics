@@ -10,8 +10,6 @@ resource "aws_instance" "checker" {
   instance_type             = "t3.micro"
   vpc_security_group_ids    = [var.sg]
   
-
-
   tags = {
     Name = "checker-instance"
   }
@@ -20,9 +18,7 @@ resource "aws_instance" "checker" {
 output "private_ip_address" {
     value  = aws_instance.checker.private_ip
 }
+
 # if you want to print any output : you need to send it to the root module. 
-
-
-## declare the empty variable 
-
+# declare the empty variable 
 variable "sg" {}
