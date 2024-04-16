@@ -8,7 +8,6 @@ data "aws_ami" "ami" {
 resource "aws_instance" "checker" {
   ami                       = data.aws_ami.ami.id 
   instance_type             = "t3.micro"
-  count                     = 3
   vpc_security_group_ids    = [var.sg]
   
 
