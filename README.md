@@ -276,3 +276,43 @@ From now if more than one parallel run happens, you'd see the below exception th
 
     Google ---> AWS AMI Datasource Terraform
 ```
+
+
+### What's the challenge with list and count ?
+
+```
+ With list and count ( 07-functions example ), you can create multiple instances but with the similar properies, but cannot create multiple instances with different properties of your choice.
+
+ In this case, we can go with something called as MAP based object, a map is nothing but a key with multiple key value pairs along with the usage of Module in terraform
+```
+
+
+### What is a module on terraform ?
+
+```
+Modules is nothing but a folder in terraform to organize and keep the terraform code dry.
+
+By default, whatever you write is also in a  root module .
+
+The main advantage of dealing Modules to we can reuse the code and that eventually keeps the code 100% dry.
+
+We can write a module for ec2+sg and this can be used by other teams, just by supplying a different set of values, that's the power of modules
+
+```
+
+
+### How to create dependency or the order of creation in terraform ?
+
+```
+This is not always a safe practice, but when you're dealing with resources that are not know to each other and you want to tell terraform that I need to create this resource-x first and then resource-y. In this case you can use "depends_on"
+
+    in resource-y, mentioned "depends_on= resource-x"
+
+```
+
+
+### In how many ways, can we use make modules in terraform ?
+
+    1) Hashicorp Supplied Modules   ( Don't use them and it's always better to make your own modules )
+    2) Make your own module and keep it locally in the same repo ( Local Modules  : Preferred )
+    3) Make your own module and keep it on the top of a remote repository ( Rempte Modules : Remote )
