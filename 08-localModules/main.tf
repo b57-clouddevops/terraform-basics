@@ -10,3 +10,9 @@ module "ec2" {
 module "sg" {
   source = "./sg"
 }
+
+## Printing the output  ( for this you need to declare the output in the ec2 folder )
+
+output "private_ip" {
+    value  = module.ec2.private_ip_address
+}
