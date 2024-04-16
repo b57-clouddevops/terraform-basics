@@ -316,3 +316,6 @@ This is not always a safe practice, but when you're dealing with resources that 
     1) Hashicorp Supplied Modules   ( Don't use them and it's always better to make your own modules )
     2) Make your own module and keep it locally in the same repo ( Local Modules  : Preferred )
     3) Make your own module and keep it on the top of a remote repository ( Rempte Modules : Remote )
+
+
+### How to pass/print the outputs from backend module to root module ? How to share the data from one module to another ?
