@@ -319,3 +319,8 @@ This is not always a safe practice, but when you're dealing with resources that 
 
 
 ### How to pass/print the outputs from backend module to root module ? How to share the data from one module to another ?
+
+
+
+### Steps To Pass The Date Between Modules ?
+
