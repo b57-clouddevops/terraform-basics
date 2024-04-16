@@ -198,3 +198,11 @@ But if you're on AWS, you can attach your DYNAMO DB to S3 and can achieve the pr
 
 How to do that is something we see in tomorrow's session.
 ```
+
+#### Problem Statement :
+
+    1) In Teams, it's not recommended that 2 people running the same infra or terraform job pointing the same infra. 
+    2) Recommended approach is, if one person is running the terraform , other person has to wait.
+    3) How it's supposed to work is, if one person runs and at the same time if someother person tries to run, he should msg saying that STATEFILE is locked by person - x and you need to wait till the completion of that. 
+    4) Point-3 is a default Terraform Enterprise Feature ( TFE : Terraform ) 
+    5) Even in openSource you can achieve the same by integrating S3 with DynamoDB ( This is exclusive to AWS )
