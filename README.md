@@ -235,3 +235,27 @@ terraform {
 ```
 
 Ensure DynamodDB is created with partition key as "LockID"
+
+
+From now if more than one parallel run happens, you'd see the below exception through the state-lock mechanism :
+
+```
+    │ Error: Error acquiring the state lock
+    │
+    │ Error message: operation error DynamoDB: PutItem, https response error StatusCode: 400, RequestID: MBR3VFCDA4QLLGD8ILRNG04RD7VV4KQNSO5AEMVJF66Q9ASUAAJG,
+    │ ConditionalCheckFailedException: The conditional request failed
+    │ Lock Info:
+    │   ID:        aed90da9-cc23-7083-df37-2260f902752e
+    │   Path:      b57-tf-state-bucket/dev/dynamodb/terraform.tfstate
+    │   Operation: OperationTypeApply
+    │   Who:       centos@ip-172-31-35-230.ec2.internal
+    │   Version:   1.8.0
+    │   Created:   2024-04-16 00:56:44.405457629 +0000 UTC
+    │   Info:
+    │
+    │
+    │ Terraform acquires a state lock to protect the state from being written
+    │ by multiple users at the same time. Please resolve the issue above and try
+    │ again. For most commands, you can disable locking with the "-lock=false"
+    │ flag, but this is not recommended.
+```
