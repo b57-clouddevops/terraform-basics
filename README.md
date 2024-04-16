@@ -209,3 +209,14 @@ How to do that is something we see in tomorrow's session.
     6) Typically if you're not on AWS Cloud and if you're using Jenkins to run terraform jobs, you can still handle it :
 
         a) On the Jenkins job, there is an option called as "disableConcurrentBuilds()" , if a job-x is running and if someone tries to run the same job-x at the same time, till the completion of the previous run, it will be in the queue. 
+
+
+Advantage of using Terraform Remote backend S3 with dynamodb :
+
+```
+    This backend also supports state locking and consistency checking via Dynamo DB, which can be enabled by setting the dynamodb_table field to an existing DynamoDB table name. 
+
+    A single DynamoDB table can be used to lock multiple remote state files. 
+
+    Terraform generates key names that include the values of the bucket and key variables.
+```
