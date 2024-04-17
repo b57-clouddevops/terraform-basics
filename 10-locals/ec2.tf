@@ -20,7 +20,7 @@ output "private_ip" {
 }
 
 # Security Group 
-resource "aws_security_group" "allow_tls" {
+resource "aws_security_group" "allows_tls" {
   name        = "b57_allow_ssh"
   description = "Allow SSH inbound traffic and all outbound traffic"
 
@@ -52,7 +52,7 @@ resource "aws_security_group" "allow_tls" {
 }
 
 
-resource "aws_security_group" "test_tls" {
+resource "aws_security_group" "testing_tls" {
   name        = "b57_allow_ssh"
   description = "Allow Test inbound traffic and all outbound traffic"
 
@@ -75,6 +75,10 @@ resource "aws_security_group" "test_tls" {
   }
 
   tags = {
-    Name = "allow_test_sg"
+    Name = "allow_testing_sg"
+      bu   = local.bu
+      mange = local.mange
+      cost  = local.cost 
+      director = local.director
   }
 }
