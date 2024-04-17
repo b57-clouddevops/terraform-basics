@@ -331,3 +331,9 @@ This is not always a safe practice, but when you're dealing with resources that 
     4) Now on the ec2/ declare an empty variable as variable "sg" {}
     5) Now this can be referrenced 
  
+
+
+What's next ?
+    1) Dynamic Blocks 
+    2) Conditions 
+    3) Locals 
