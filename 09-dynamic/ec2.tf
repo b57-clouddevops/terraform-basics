@@ -67,6 +67,6 @@ resource "aws_security_group" "test_tls" {
   }
 
   tags = {
-    Name = "allow_ssh_sg"
+    Name = "allow_test_sg"
   }
 }
