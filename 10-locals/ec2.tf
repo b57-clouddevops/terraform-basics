@@ -43,7 +43,7 @@ resource "aws_security_group" "allows_tls" {
   }
 
   tags = {
-      Name = "allows_ssh_sg"
+      Name = "allowing_ssh_sg"
       bu   = local.bu
       mange = local.mange
       cost  = local.cost 
@@ -75,7 +75,7 @@ resource "aws_security_group" "testing_tls" {
   }
 
   tags = {
-    Name = "allow_testing_sg"
+    Name = "testing_sg"
       bu   = local.bu
       mange = local.mange
       cost  = local.cost 
