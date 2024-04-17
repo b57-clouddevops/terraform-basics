@@ -21,7 +21,7 @@ output "private_ip" {
 
 # Security Group 
 resource "aws_security_group" "allows_tls" {
-  name        = "b57_allow_ssh"
+  name        = "b57ing_allow_ssh"
   description = "Allow SSH inbound traffic and all outbound traffic"
 
   dynamic ingress {
@@ -53,7 +53,7 @@ resource "aws_security_group" "allows_tls" {
 
 
 resource "aws_security_group" "testing_tls" {
-  name        = "b57_allow_ssh"
+  name        = "b57s_allow_ssh"
   description = "Allow Test inbound traffic and all outbound traffic"
 
   dynamic ingress {
