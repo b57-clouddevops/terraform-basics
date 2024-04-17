@@ -1,7 +1,7 @@
 # Defining the resources 
 resource "aws_instance" "app" {
   ami                       = "ami-072983368f2a6eab5"
-  instance_type             = "t3.micro"
+  instance_type             = local.bu == "saas-team" ? "t2.micro" : t3.medium
   vpc_security_group_ids    = [aws_security_group.allows_tls.id]
 
 
