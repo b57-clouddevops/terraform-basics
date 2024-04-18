@@ -324,7 +324,7 @@ This is not always a safe practice, but when you're dealing with resources that 
 
 ### Steps To Pass The Date Between Modules ?
 
-`Ref : https://github.com/b57-clouddevops/terraform-basics/tree/main/08-localModules`
+Ref : https://github.com/b57-clouddevops/terraform-basics/tree/main/08-localModules`
     1) If you've 2 modules named ec2/ and sg/
     2) And to pass the sdID in form sg module to ec2/, then declare the sdid as output in the sg/ 
     3) Now supply this as abject in the root folder ( sg = module.sg.sdID)
@@ -337,3 +337,13 @@ What's next ?
     1) Dynamic Blocks 
     2) Conditions 
     3) Locals 
+    4) Network
+
+
+
+
+Outputs in terraform are not just to display information. 
+They play a very important role in sharing the data from one module to other module
+
+
+What is the purpose of Dynamic Blocks In Terraform ?
