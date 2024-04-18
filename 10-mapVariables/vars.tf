@@ -1,4 +1,4 @@
-# Map Variable 
+# Map Variable [ Map Of Maps ]
 variable "COMPONENTS" {
     default = {
         catalogue = {
