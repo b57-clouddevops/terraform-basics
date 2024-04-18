@@ -347,3 +347,7 @@ They play a very important role in sharing the data from one module to other mod
 
 
 What is the purpose of Dynamic Blocks In Terraform ?
+
+When to locals in terraform ?
+
+    When you have a similar pattern and would like to use it or call it on need basis you can use locals.
