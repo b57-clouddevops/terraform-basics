@@ -349,6 +349,8 @@ IfElse In Terraform : ( Conditional Expression )
 
             condition ? true_val : false_val ```
 
+### Use Case : If the BU using this script is saas = t3.medium and any other BU apart from saas should go by t3.micro
+
 
 
 
