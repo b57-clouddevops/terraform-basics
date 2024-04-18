@@ -340,6 +340,16 @@ What's next ?
     4) Network
 
 
+for_each, count (count.index) , if_else
+
+IfElse In Terraform : ( Conditional Expression )
+        
+
+    ```If condition is true then the result is true_val. If condition is false then the result is false_val.
+
+            condition ? true_val : false_val ```
+
+
 
 
 Outputs in terraform are not just to display information. 
