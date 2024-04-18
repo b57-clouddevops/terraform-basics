@@ -1,5 +1,5 @@
 locals {
-    bu       = "saas"
+    bu       = "paas"
     manager  = "SteveJobs"
     director = "EdisonRoy"
     cost     = 500501
