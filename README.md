@@ -375,3 +375,22 @@ When to locals in terraform ?
         3) File Provisioner   : This is used to copy something to the newly creaed infra. ( For this connection provision will also be used )
         4) Connection Provisoner  : To perform something on the top of remote machine : on the created machine, first connection should be enabled and this can be enabled by connection-provisioner.
 
+### Pros and Cons of using List vs Maps ? 
+
+How to use Map of Maps ?
+
+
+The very first thing that you set you in your company when you decid eto start a project is :
+    > Building Network 
+    > So, it's quite essential you should know how it works and what to be considered before you start the project.
+
+### Internet vs Intranet 
+
+        Internet : Public Network 
+        Intranet : Private Network
+
+### Infra Provisioning :
+
+        1) VPC 
+        2) DB's
+        3) Compute + CM 
